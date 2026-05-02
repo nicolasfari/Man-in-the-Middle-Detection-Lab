@@ -181,7 +181,7 @@ arp.opcode == 2 && arp.src.proto_ipv4 == 192.168.10.1
 arp.opcode == 2 && arp.src.proto_ipv4 == 192.168.10.1 && eth.src == 02:fe:fe:fe:55:55
 ```
 > Após identificar o MAC suspeito no passo anterior, este filtro confirma a identidade do atacante — todos os pacotes onde `02:fe:fe:fe:55:55` está afirmando ser o gateway.
-<img width="1076" height="598" alt="image" src="https://github.com/user-attachments/assets/d425a472-20c8-459f-9975-7323c708e63b" />
+<img width="1110" height="561" alt="image" src="https://github.com/user-attachments/assets/1424aeb3-8382-4db4-a501-f103030d3a90" />
 
 
 ---

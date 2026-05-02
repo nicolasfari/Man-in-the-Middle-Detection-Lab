@@ -261,7 +261,7 @@ dns.flags.response == 1 && ip.src == 8.8.8.8
 dns.flags.response == 1
 ```
 > Com o baseline em mente, este filtro mais amplo permite identificar respostas vindas de IPs **diferentes** de `8.8.8.8` — um host interno respondendo DNS é imediatamente suspeito.
-<img width="1450" height="477" alt="image" src="https://github.com/user-attachments/assets/6e3c0ada-0ed0-4c42-841c-ba9c2c199021" />
+<img width="1421" height="492" alt="image" src="https://github.com/user-attachments/assets/a1d82ee6-265d-4fec-99ae-9e9b7a478265" />
 
 ---
 
@@ -270,7 +270,6 @@ dns.flags.response == 1
 dns && dns.qry.name == "corp-login.acme-corp.local"
 ```
 > Isola todo tráfego DNS relacionado ao domínio corporativo de interesse. Permite ver quem está consultando, com que frequência, e quem está respondendo.
-<img width="1259" height="470" alt="image" src="https://github.com/user-attachments/assets/5614cda7-3186-4992-b8a3-f00e9ca47846" />
 
 ---
 
@@ -279,7 +278,7 @@ dns && dns.qry.name == "corp-login.acme-corp.local"
 dns.flags.response == 1 && ip.src == 8.8.8.8 && dns.qry.name == "corp-login.acme-corp.local"
 ```
 > Mostra apenas respostas legítimas do servidor DNS para o domínio alvo. Confirma o IP real do servidor (`93.184.216.34` ou similar) que serve como referência para comparação.
-<img width="1259" height="470" alt="image" src="https://github.com/user-attachments/assets/89cd5d94-4ff3-444a-8844-400621c5982c" />
+<img width="1428" height="492" alt="image" src="https://github.com/user-attachments/assets/d77cd95d-f386-48f5-8a1d-905a403d2588" />
 
 ---
 
